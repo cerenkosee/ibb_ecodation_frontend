@@ -4,8 +4,26 @@
  Version : v.1 */
 
  /* ################################## */
+ /* Root */
+ :root{
+  --templateBgColor:rgb(131, 160, 189);
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  /* Cammon Property */
-
  *{
 margin: 0;
 padding: 0;
@@ -13,7 +31,7 @@ box-sizing: border-box;
  }
 
 html{
-  font-size: 20px;
+  font-size: 15px;
 
 }
 
@@ -83,6 +101,25 @@ i{
 }
 
 /* ############################
+Navbar */
+.dark_mode{
+  background-color: var(--templateBgColor);
+  color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+/* ############################
 Header */
 header{
   background-image: url(../img/img1.jpg);
@@ -92,4 +129,14 @@ header{
   z-index: -1;
   height: 80vh;
   padding-top: 3rem; 
+}
+
+
+/* Footer */
+footer{
+  min-height: 10rem;
+  width: auto;
+  background-color: black;
+  color: white;
+
 }

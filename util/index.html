@@ -31,12 +31,16 @@
   </head>
   <body daa-bs-spy="scroll" data-bs-target="#navbar_id">
    <noscript>Bu browser javascripti desteklemiyor.</noscript>
-    <!-- start codes -->
+    <!-- jquery   -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+   
+   <!-- start codes -->
 
    <!-- start nav codes -->
  
 
-    <nav  id="navbar_id" class="navbar navbar-expand-lg bg-body-tertiary navbar-dark bg-dark">
+    <nav  id="navbar_id" class="navbar navbar-expand-lg bg-body-tertiary navbar-dark bg-dark ">
       <div class="container">        <!-- container-fluid -->
         <a class="navbar-brand" href="index.html"><i class="fa-brands fa-blogger"></i></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -52,21 +56,25 @@
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
+                <i class="fa-regular fa-user text-primary"></i>
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Login</a></li>
+                <li><a class="dropdown-item" href="#">Register</a></li>
                 <li><hr class="dropdown-divider"></li>
                 <li><a class="dropdown-item" href="#">Something else here</a></li>
               </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link disabled">Disabled</a>
-            </li>
+
           </ul>
+
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <button class="btn btn-primary" onclick="darkModu()" ><i class="fa-solid fa-moon" style="color: #ffffff;"></i></button>
+            </li>
+            </ul>
           <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Arama için.." aria-label="Search">
+            <input id="tags" class="form-control me-2" type="search" placeholder="Arama için.." aria-label="Search">
             <button class="btn btn-primary" type="submit">Ara</button>
             <!-- btn-outline-success -->
           </form>
@@ -93,29 +101,21 @@
     <!-- start main codes -->
     <main id="main_id">
       <section>
-        <!-- <a href="#">Lorem ipsum dolor sit.</a>
-        <ul>
-          <li>item 1</li>
-          <li>item 2</li>
-          <li>item 3</li>
-        </ul>
-
-        <img src="" alt=""/>
-         <p class="line-clamp5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, cupiditate! Libero quaerat animi repudiandae tempore, dolor possimus, cum adipisci quae amet facilis, cumque corporis. Nostrum, maxime. Totam in dolorem mollitia.
-         Quia at ad velit voluptatibus. Itaque eum ex, vel voluptatem quam fugiat! Illo impedit beatae dolorum, architecto perferendis delectus consequuntur corrupti vel tenetur, sint ipsa dolores! Exercitationem excepturi laudantium sed!
-         Atque unde nisi ea nulla consectetur aperiam laudantium pariatur, quo facere ratione magni facilis optio delectus recusandae? Et consequatur animi quaerat blanditiis quod, labore inventore assumenda alias. Nulla, esse saepe?
-         Quia cum quis sed quo ratione similique eveniet temporibus sapiente ipsam molestiae. Reiciendis, assumenda. Sequi asperiores, provident reprehenderit qui repellat nemo dolore officia voluptatem exercitationem pariatur beatae ducimus excepturi maxime!
-         Obcaecati illo ducimus soluta ullam fugiat quasi consectetur numquam nihil vel! Nisi debitis fugit animi. Earum quisquam ab ipsam laborum accusantium, adipisci neque qui, rerum expedita quis iure, fugiat esse!
-         Aut aliquid maxime quibusdam, repellendus iure quis sapiente suscipit accusantium architecto aspernatur consequatur quisquam possimus, quidem voluptatum, culpa tempora officiis nostrum amet delectus recusandae repellat minus. Quibusdam est molestiae nisi.
-         Omnis, dolorem enim facere iusto numquam suscipit ratione maxime sed necessitatibus dolore corporis ipsa est possimus quasi pariatur accusantium mollitia tenetur sunt esse, porro, error fugit quam nisi! Aliquam, veritatis!
-         Inventore, quam molestiae repudiandae unde quis enim, provident corrupti saepe est laboriosam earum, reiciendis fugiat laborum dolore qui et. Porro tempora rem enim maxime quos velit temporibus voluptates. Possimus, quasi.
-         Quidem dolorum voluptate nesciunt dicta voluptatum harum inventore perferendis eligendi ad facilis quia cupiditate, nam neque, deserunt architecto? Recusandae similique voluptatum doloremque maxime nisi excepturi reiciendis eveniet adipisci eligendi porro?
-         Facilis est obcaecati accusantium fugiat tempora sapiente commodi temporibus repellat numquam ad magni alias, sunt a vel ipsam odit laboriosam nesciunt dolores! Voluptatum alias voluptate ipsa optio esse quisquam accusantium?</p> -->
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum pariatur illo et quas! Veniam voluptatum eligendi, praesentium suscipit inventore non quos totam ipsum modi, exercitationem eius mollitia? Repellendus, enim ducimus?
+       Nulla consectetur, et nisi placeat repellat optio, nihil est dignissimos quo nostrum rem ullam error itaque vel veritatis ab reiciendis culpa facere explicabo. Facilis expedita excepturi numquam magni odit temporibus.
+       Porro eum consequatur at quaerat tempore ipsa! Reprehenderit ducimus eos neque molestiae asperiores doloribus a quam, voluptatum error, consequatur, debitis odio laborum. Tempore et at ullam! Ad blanditiis deleniti iusto.
+       Inventore vitae doloribus dolore, praesentium ipsam quaerat? Magni voluptates ipsum sequi atque, repellendus, exercitationem iure eius numquam eum nulla debitis, facere nostrum dolore tempore eveniet expedita mollitia fugiat iusto facilis.
+       Quo, magnam dolorum temporibus nisi laboriosam fuga eveniet sint autem commodi qui ratione iure, reiciendis, necessitatibus aut itaque quia modi. Provident odit praesentium voluptatibus atque ex facilis laudantium quidem? Quis!
+       Possimus officia officiis sit nihil vel repudiandae quis unde corporis, blanditiis quam magni reiciendis aut rem aspernatur, veniam commodi ratione voluptatum saepe molestiae quia. Pariatur aspernatur saepe ratione cupiditate repudiandae!
+       Qui accusantium vel quod corrupti amet, animi eligendi fugit porro soluta rerum aut ab doloremque modi libero magnam. Cumque reiciendis optio nobis sequi facilis doloremque voluptate eaque iusto temporibus excepturi.
+       Omnis est quam nostrum? Laborum porro quasi a cum fuga asperiores fugit enim deserunt dignissimos, blanditiis dolorem optio quos rerum quod nulla repudiandae modi vel sapiente accusamus magni? Neque, explicabo.</p>
       </section>
     </main>
     <!-- end main codes -->
     <!-- start footer codes -->
-    <footer id="footer_id"></footer>
+    <footer id="footer_id">
+      <div class="text-center p-5 bg-dark" id="copy_right">2021- <span id="date_id"></span> &copy; Bütün Hakları Saklıdır </div>
+    </footer>
     <!-- end footer codes -->
 
     <!-- end codes -->
