@@ -52,6 +52,16 @@ i {
   clear: both;
 }
 
+.myHeading{
+text-align: center;
+text-decoration: underline;
+margin-bottom: 2rem;
+text-transform: uppercase;
+text-shadow: 0.4px -0.9px rgba(0,0,0,0.4);
+opacity: 0.8;
+}
+
+
 /* ############################## */
 /* my special size */
 .fSize1 {
@@ -67,21 +77,27 @@ i {
   font-size: 4rem;
 }
 
-.line-clamp5 {
+.line-clamp4 {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 4;
+  display: -webkit-box;
+  overflow: hidden;
+}
+.line-clamp5 {
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
   display: -webkit-box;
   overflow: hidden;
 }
 .line-clamp8 {
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 4;
+  -webkit-line-clamp: 5;
   display: -webkit-box;
   overflow: hidden;
 }
 .line-clamp10 {
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 4;
+  -webkit-line-clamp: 5;
   display: -webkit-box;
   overflow: hidden;
 }
@@ -104,6 +120,27 @@ header {
   height: 80vh;
   padding-top: 3rem;
 }
+
+/* Header */
+
+#messages{
+ margin-top: 3rem;
+ margin-bottom: 3rem;
+}
+#messages i{
+  color: blue;
+  font-size: 5rem;
+}
+
+
+
+
+
+
+
+
+
+
 
 /* Footer */
 footer {
