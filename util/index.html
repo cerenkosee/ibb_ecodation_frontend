@@ -59,8 +59,8 @@
                 <i class="fa-regular fa-user text-primary"></i>
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#loginId">Login</a></li>
-                <li><a class="dropdown-item" href="#">Register</a></li>
+                <li><a class="dropdown-item" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#loginId">Login</a></li>
+                <li><a class="dropdown-item" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#registerId">Register</a></li>
                 <li><hr class="dropdown-divider"></li>
                 <li><a class="dropdown-item" href="#">Something else here</a></li>
               </ul>
@@ -92,7 +92,7 @@
       <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="modalTitleId">Register</h5>
+            <h5 class="modal-title" id="modalTitleId">Login</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
@@ -132,7 +132,55 @@
     
     <!-- Register -->
 
-
+     <div class="modal fade" id="registerId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalTitleId">Register</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <!-- Username input -->
+              <div class="form-outline mb-4">
+                <label class="form-label" for="form5Example1">Username</label>
+                <input type="text" id="form5Example1" class="form-control" />
+            
+              </div>
+            
+              <!-- Password input -->
+              <div class="form-outline mb-4">
+                <label class="form-label" for="form5Example2">Password</label>
+                <input type="password" id="form5Example2" class="form-control" />
+        
+              </div>
+              <!-- email adress input -->
+              <div class="form-outline mb-4">
+                <label class="form-label" for="form5Example2">Email adress</label>
+                <input type="email" id="form5Example2" class="form-control" />
+        
+              </div>
+            
+              <!-- Checkbox -->
+              <div class="form-check d-flex justify-content-center mb-4">
+                <input class="form-check-input me-2" type="checkbox" value="" id="form5Example3" checked />
+                <label class="form-check-label" for="form5Example3">
+                  I have read and agree to the terms
+                </label>
+              </div>
+            
+              <!-- Submit button -->
+              <button type="submit" class="btn btn-primary btn-block mb-4">Subscribe</button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+            
+          </div>
+        </div>
+      </div>
+     </div>
+    
 
     <!-- start header codes -->
     <header id="header_id">
