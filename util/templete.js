@@ -4,12 +4,12 @@ let darkModu=()=>{
 }
 
 //input search
-$(document).ready(function(){
-  const searchApi=["Adana","Balikesir","Amasya","Çorum","Denizli","İstanbul","Bolu","Bursa"];
-  $("#tags").autocomplete({
-    source:searchApi
-  })
-});
+// $(document).ready(function(){
+//   const searchApi=["Adana","Balikesir","Amasya","Çorum","Denizli","İstanbul","Bolu","Bursa"];
+//   $("#tags").autocomplete({
+//     source:searchApi
+//   })
+// });
 
 // Footer
 let newDate=()=>{

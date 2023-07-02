@@ -45,12 +45,39 @@ img:hover {
 i {
   font-size: 1.5rem;
 }
-
+p{
+  color: black!important;
+}
 .my_clearfix::after {
   content: "";
   display: block;
   clear: both;
 }
+
+#form_id{
+  background-color: rgb(68, 32, 32);
+}
+
+#form_id  form{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 0 24px;
+  height: 600px;
+  background-color: rgb(68, 32, 32);
+
+}
+ .d-flex{
+  margin-right: 12px;
+ }
+ .nav-item{
+margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+ }
 
 .myHeading {
   text-align: center;
@@ -131,6 +158,9 @@ header {
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
+#messages .container .row .text-center p{
+  color: black!important;
+}
 #messages i {
   color: blue;
   font-size: 5rem;
@@ -148,8 +178,26 @@ header {
 }
 
 #parallax h2,p{
-  color: white;
+  color: white!important;
 }
+
+/* Newspaper */
+
+#newspaper {
+height: 35rem;
+padding: 2rem;
+ }
+
+ #newspaper p{
+  text-align: justify;
+  color: black!important;
+ }
+
+/* Blog */
+#blog{
+  background-color: rgb(149, 158, 238);
+}
+
 
 
 /* Footer */
